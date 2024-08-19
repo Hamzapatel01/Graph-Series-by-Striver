@@ -18,7 +18,7 @@ class Solution {
 	        
 	        for(auto it: adj[node]){
 	            if(colour[it] == -1){
-	                colour[it] =  colour[node];
+	                colour[it] =  !colour[node];
 	                q.push(it);
 	            } else{
 	                if(colour[it] == colour[node])
